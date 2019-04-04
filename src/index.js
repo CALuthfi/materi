@@ -4,7 +4,7 @@ import "./index.css";
 // import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Counters from "./mapel/composing-components/Single-Source-of-Truth/counters";
+import Counters from "./mapel/composing-components/Removing-the-Local-State/counters";
 
 ReactDOM.render(<Counters />, document.getElementById("root"));
 
