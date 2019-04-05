@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./mapel/composing-components/navbar/navbar";
-import Counters from "./mapel/composing-components/Mounting-Phase/counters";
+import Counters from "./mapel/composing-components/Updating-Phase/counters";
 class App extends Component {
   state = {
     counters: [
