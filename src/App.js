@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./mapel/composing-components/navbar/navbar";
-import Counters from "./mapel/composing-components/Destructuring-Arguments/counters";
+import Counters from "./mapel/composing-components/Mounting-Phase/counters";
 class App extends Component {
   state = {
     counters: [
@@ -12,6 +12,15 @@ class App extends Component {
       { id: 4, value: 0 }
     ]
   };
+
+  constructor(props) {
+    super(props);
+    console.log("App - Constructor");
+  }
+
+  componentDidMount() {
+    console.log("App - Mounted");
+  }
 
   handleIncrement = counter => {
     const counters = [...this.state.counters];
@@ -34,6 +43,8 @@ class App extends Component {
     this.setState({ counters });
   };
   render() {
+    console.log("app - Rendered");
+
     return (
       <React.Fragment>
         <Navbar
